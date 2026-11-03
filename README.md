@@ -50,8 +50,7 @@ The screenshots show PentAGI accessible locally at `127.0.0.1:8443`. Localhost p
 
 ### PentAGI setup evidence
 
-![PentAGI installation and environment checks](<img width="1271" height="800" alt="PentAGI" src="https://github.com/user-attachments/assets/5d4da703-5ef5-470a-bf38-8424e4df19b1" />
-)
+![PentAGI installation and environment checks](https://github.com/user-attachments/assets/5d4da703-5ef5-470a-bf38-8424e4df19b1)
 
 *Figure 1 — PentAGI setup checks for Docker, Compose, network connectivity, and required environment configuration.*
 
@@ -82,14 +81,10 @@ The screenshots represent selected observations, not a complete audit trail or p
 
 | ID | Target | PentAGI finding | Reported severity / score | Evidence |
 |---|---|---|---|---|
-| 2 | Juice Shop | UNION-based SQL injection and database-record exposure | Labeled **Critical** by the agent; **CVSS 3.1: 8.6** | [Screenshot](<img width="1271" height="800" alt="Finding 2" src="https://github.com/user-attachments/assets/468e9540-4742-4f7f-a1d0-39a1b6d90d2f" />)
-) |
-| 3 | Juice Shop | Client-supplied role accepted during registration / potential privilege escalation | **Critical**, **CVSS 3.1: 9.8** | [Screenshot] <img width="1271" height="800" alt="Finding 3" src="https://github.com/user-attachments/assets/3a325344-027c-47e7-92f7-a5b082c640f9" />)
-) |
-| 4 | Juice Shop | IDOR / broken object-level authorization for shopping baskets | **High**, **CVSS 3.1: 7.5** | [Screenshot](<img width="1271" height="800" alt="Finding 4" src="https://github.com/user-attachments/assets/d5a28103-b0cf-4cb9-9f73-668045d91c9e" />)
-) |
-| L3 | Portfolio | CSP reporting and monitoring directives missing | **Low** impact, per agent | [Screenshot](<img width="1271" height="800" alt="Security Audit" src="https://github.com/user-attachments/assets/f6178c32-1d57-4b26-bb88-93ab26009163" />)
-) |
+| 2 | Juice Shop | UNION-based SQL injection and database-record exposure | Labeled **Critical** by the agent; **CVSS 3.1: 8.6** | [Screenshot](https://github.com/user-attachments/assets/468e9540-4742-4f7f-a1d0-39a1b6d90d2f) |
+| 3 | Juice Shop | Client-supplied role accepted during registration / potential privilege escalation | **Critical**, **CVSS 3.1: 9.8** | [Screenshot](https://github.com/user-attachments/assets/3a325344-027c-47e7-92f7-a5b082c640f9) |
+| 4 | Juice Shop | IDOR / broken object-level authorization for shopping baskets | **High**, **CVSS 3.1: 7.5** | [Screenshot](https://github.com/user-attachments/assets/d5a28103-b0cf-4cb9-9f73-668045d91c9e) |
+| L3 | Portfolio | CSP reporting and monitoring directives missing | **Low** impact, per agent | [Screenshot](https://github.com/user-attachments/assets/f6178c32-1d57-4b26-bb88-93ab26009163) |
 
 **Severity interpretation:** All labels and scores above are transcribed from the PentAGI output; they were not independently scored in this case study. Under conventional CVSS v3.1 bands, **8.6 is High**, rather than Critical (9.0–10.0). Severity should be reviewed against the actual environment and impact.
 
@@ -110,8 +105,7 @@ An improperly parameterized search endpoint can allow database information to be
 
 ### Evidence
 
-![PentAGI Finding 2 — SQL Injection](<img width="1271" height="800" alt="Finding 2" src="https://github.com/user-attachments/assets/db00ba8b-bc4b-418d-ad59-5c7ddd424141" />)
-)
+![PentAGI Finding 2 — SQL Injection](https://github.com/user-attachments/assets/db00ba8b-bc4b-418d-ad59-5c7ddd424141)
 
 *Figure 2 — PentAGI Finding 2, including the product-search endpoint, UNION-based SQL-injection test, and returned output.*
 
@@ -144,8 +138,7 @@ If a server trusts a registration request's client-controlled role field, a new 
 
 ### Evidence
 
-![PentAGI Finding 3 — Privilege Escalation](<img width="1271" height="800" alt="Finding 3" src="https://github.com/user-attachments/assets/cf96afa2-7739-4728-be58-1cb810583e24" />
-)
+![PentAGI Finding 3 — Privilege Escalation](https://github.com/user-attachments/assets/cf96afa2-7739-4728-be58-1cb810583e24)
 
 *Figure 3 — PentAGI Finding 3 showing account-registration testing, role-related terminal output, and the agent's severity assessment.*
 
@@ -178,8 +171,7 @@ An **IDOR / broken object-level authorization (BOLA)** issue occurs when an appl
 
 ### Evidence
 
-![PentAGI Finding 4 — IDOR](<img width="1271" height="800" alt="Finding 4" src="https://github.com/user-attachments/assets/bf700c3d-941a-4c9c-9ff2-03e86767f95f" />
-)
+![PentAGI Finding 4 — IDOR](https://github.com/user-attachments/assets/bf700c3d-941a-4c9c-9ff2-03e86767f95f)
 
 *Figure 4 — PentAGI Finding 4 showing shopping-basket requests against other IDs and returned HTTP 200 responses.*
 
@@ -210,8 +202,7 @@ CSP helps restrict which content a browser is permitted to load. CSP violation r
 
 ### Evidence
 
-![PentAGI portfolio security audit — CSP L3](<img width="1271" height="800" alt="Security Audit" src="https://github.com/user-attachments/assets/5337bef5-d4b2-41e8-af5b-c2c0e8f1dd15" />
-)
+![PentAGI portfolio security audit — CSP L3](https://github.com/user-attachments/assets/5337bef5-d4b2-41e8-af5b-c2c0e8f1dd15)
 
 *Figure 5 — PentAGI portfolio audit and inspection of CSP meta declarations in repository HTML files.*
 
@@ -275,13 +266,8 @@ Do not reuse these techniques against systems without explicit authorization. No
 
 | Screenshot | What it demonstrates |
 |---|---|
-| [PentAGI setup](<img width="1271" height="800" alt="PentAGI" src="https://github.com/user-attachments/assets/0cee7d2d-04b9-4afc-af95-cc48e7c9c971" />
-) | Environment preparation and platform checks |
-| [Finding 2](<img width="1271" height="800" alt="PentAGI" src="https://github.com/user-attachments/assets/98236b75-23a8-472f-b501-b5e33a24ed46" />
-) | SQL-injection report and related test output |
-| [Finding 3](<img width="1271" height="800" alt="Finding 3" src="https://github.com/user-attachments/assets/660146ca-1981-4001-8da0-89a85e6afef5" />
-) | Registration-role / privilege-escalation report |
-| [Finding 4](<img width="1271" height="800" alt="Finding 4" src="https://github.com/user-attachments/assets/7c76e569-acf4-4ab8-9f53-89c6f61dbd0b" />
-) | Cross-basket request / IDOR report |
-| [Portfolio audit](<img width="1271" height="800" alt="Security Audit" src="https://github.com/user-attachments/assets/40dee012-f308-46cd-bc12-53435024b7e4" />
-) | L3 missing CSP reporting assessment |
+| [PentAGI setup](https://github.com/user-attachments/assets/0cee7d2d-04b9-4afc-af95-cc48e7c9c971) | Environment preparation and platform checks |
+| [Finding 2](https://github.com/user-attachments/assets/98236b75-23a8-472f-b501-b5e33a24ed46) | SQL-injection report and related test output |
+| [Finding 3](https://github.com/user-attachments/assets/660146ca-1981-4001-8da0-89a85e6afef5) | Registration-role / privilege-escalation report |
+| [Finding 4](https://github.com/user-attachments/assets/7c76e569-acf4-4ab8-9f53-89c6f61dbd0b) | Cross-basket request / IDOR report |
+| [Portfolio audit](https://github.com/user-attachments/assets/40dee012-f308-46cd-bc12-53435024b7e4) | L3 missing CSP reporting assessment |
