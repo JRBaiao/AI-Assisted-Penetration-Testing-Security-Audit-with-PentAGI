@@ -82,13 +82,13 @@ The screenshots represent selected observations, not a complete audit trail or p
 
 | ID | Target | PentAGI finding | Reported severity / score | Evidence |
 |---|---|---|---|---|
-| 2 | Juice Shop | UNION-based SQL injection and database-record exposure | Labeled **Critical** by the agent; **CVSS 3.1: 8.6** | [Screenshot](<img width="1271" height="800" alt="Finding 2" src="https://github.com/user-attachments/assets/468e9540-4742-4f7f-a1d0-39a1b6d90d2f" />
+| 2 | Juice Shop | UNION-based SQL injection and database-record exposure | Labeled **Critical** by the agent; **CVSS 3.1: 8.6** | [Screenshot](<img width="1271" height="800" alt="Finding 2" src="https://github.com/user-attachments/assets/468e9540-4742-4f7f-a1d0-39a1b6d90d2f" />)
 ) |
-| 3 | Juice Shop | Client-supplied role accepted during registration / potential privilege escalation | **Critical**, **CVSS 3.1: 9.8** | [Screenshot](<img width="1271" height="800" alt="Finding 3" src="https://github.com/user-attachments/assets/3a325344-027c-47e7-92f7-a5b082c640f9" />
+| 3 | Juice Shop | Client-supplied role accepted during registration / potential privilege escalation | **Critical**, **CVSS 3.1: 9.8** | [Screenshot] <img width="1271" height="800" alt="Finding 3" src="https://github.com/user-attachments/assets/3a325344-027c-47e7-92f7-a5b082c640f9" />)
 ) |
-| 4 | Juice Shop | IDOR / broken object-level authorization for shopping baskets | **High**, **CVSS 3.1: 7.5** | [Screenshot](<img width="1271" height="800" alt="Finding 4" src="https://github.com/user-attachments/assets/d5a28103-b0cf-4cb9-9f73-668045d91c9e" />
+| 4 | Juice Shop | IDOR / broken object-level authorization for shopping baskets | **High**, **CVSS 3.1: 7.5** | [Screenshot](<img width="1271" height="800" alt="Finding 4" src="https://github.com/user-attachments/assets/d5a28103-b0cf-4cb9-9f73-668045d91c9e" />)
 ) |
-| L3 | Portfolio | CSP reporting and monitoring directives missing | **Low** impact, per agent | [Screenshot](<img width="1271" height="800" alt="Security Audit" src="https://github.com/user-attachments/assets/f6178c32-1d57-4b26-bb88-93ab26009163" />
+| L3 | Portfolio | CSP reporting and monitoring directives missing | **Low** impact, per agent | [Screenshot](<img width="1271" height="800" alt="Security Audit" src="https://github.com/user-attachments/assets/f6178c32-1d57-4b26-bb88-93ab26009163" />)
 ) |
 
 **Severity interpretation:** All labels and scores above are transcribed from the PentAGI output; they were not independently scored in this case study. Under conventional CVSS v3.1 bands, **8.6 is High**, rather than Critical (9.0–10.0). Severity should be reviewed against the actual environment and impact.
@@ -110,7 +110,7 @@ An improperly parameterized search endpoint can allow database information to be
 
 ### Evidence
 
-![PentAGI Finding 2 — SQL Injection](<img width="1271" height="800" alt="Finding 2" src="https://github.com/user-attachments/assets/db00ba8b-bc4b-418d-ad59-5c7ddd424141" />
+![PentAGI Finding 2 — SQL Injection](<img width="1271" height="800" alt="Finding 2" src="https://github.com/user-attachments/assets/db00ba8b-bc4b-418d-ad59-5c7ddd424141" />)
 )
 
 *Figure 2 — PentAGI Finding 2, including the product-search endpoint, UNION-based SQL-injection test, and returned output.*
